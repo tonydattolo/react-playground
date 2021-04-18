@@ -1,8 +1,8 @@
 window.helpers = (function () {
   function newTimer(attrs = {}) {
     const timer = {
-      title: attrs.title || 'Timer',
-      project: attrs.project || 'Project',
+      title: attrs.title || "Timer",
+      project: attrs.project || "Project",
       id: uuid.v4(), // eslint-disable-line no-undef
       elapsed: 0,
     };
@@ -36,7 +36,7 @@ window.helpers = (function () {
       pad(hours.toString(), 2),
       pad(minutes.toString(), 2),
       pad(seconds.toString(), 2),
-    ].join(':');
+    ].join(":");
 
     return humanized;
   }
@@ -53,4 +53,4 @@ window.helpers = (function () {
     findById,
     renderElapsedString,
   };
-}());
+})();
